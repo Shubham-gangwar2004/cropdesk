@@ -1,0 +1,163 @@
+.account-loading {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.account-container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+}
+
+.account-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  padding: 40px;
+}
+
+.account-card h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.account-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #27ae60;
+}
+
+.avatar-upload-btn {
+  display: inline-block;
+  padding: 7px 20px;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.avatar-upload-btn:hover { background: #2980b9; }
+
+.account-role {
+  background: #e8f5e9;
+  color: #27ae60;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.account-msg {
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.account-msg.success { background: #e8f5e9; color: #27ae60; }
+.account-msg.error   { background: #fdecea; color: #e74c3c; }
+
+.account-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #27ae60;
+  border-bottom: 2px solid #e8f5e9;
+  padding-bottom: 6px;
+  margin: 24px 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.account-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.account-field {
+  margin-bottom: 16px;
+}
+
+.account-field label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+.account-field input,
+.account-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.account-field input:focus,
+.account-field textarea:focus {
+  outline: none;
+  border-color: #27ae60;
+}
+
+.account-field input:disabled {
+  background: #f5f5f5;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.account-field textarea { resize: vertical; }
+
+.account-save-btn {
+  width: 100%;
+  padding: 14px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.account-save-btn:hover:not(:disabled) { background: #229954; }
+.account-save-btn:disabled { background: #95a5a6; cursor: not-allowed; }
+
+@media (max-width: 600px) {
+  .account-card { padding: 24px 16px; }
+}
+
+/* ── Additional responsive ── */
+@media (max-width: 480px) {
+  .account-container { padding: 0 12px 40px; margin-top: 16px; }
+  .account-card { padding: 20px 14px; }
+  .account-card h2 { font-size: 1.4rem; }
+  .account-avatar { width: 88px; height: 88px; }
+  .account-row { grid-template-columns: 1fr; }
+  .account-save-btn { font-size: 0.95rem; }
+}

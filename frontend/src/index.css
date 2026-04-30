@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f4f7f4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* Prevent horizontal scroll on all pages */
+#root {
+  overflow-x: hidden;
+}
